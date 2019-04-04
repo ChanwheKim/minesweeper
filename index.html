@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>MineSweeper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <input type="checkbox" id="navi-toggle" class="navigation-checkbox">
+            <label for="navi-toggle" class="navigation-button">
+                <span class="navigation-icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation-background"></div>
+
+            <div class="navigation-nav">
+                <ul class="navigation-list">
+                    <li class="navigation-item" data-diff='easy'>Easy</li>
+                    <li class="navigation-item" data-diff='normal'>Normal</li>
+                    <li class="navigation-item" data-diff='hard'>Hard</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dash-board">
+            <div class="mine">
+                <img src="img/mine.png">
+                <span>12</span>
+            </div>
+            <img src="img/smile.png" class="emo">
+            <div class="time-label">
+                <span class="minute">00</span>:<span class="seconds">00</span>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+    <table class="score-board">
+        <tr>
+            <th class="date">date</th>
+            <th class="username">username</th>
+            <th class="difficulty">difficulty</th>
+            <th class="time">time</th>
+        </tr>
+        <tr>
+            <td>Oct. 28th 2018</td>
+            <td>Chanwhe Kim</td>
+            <td>Hard</td>
+            <td>01:00</td>
+        </tr>
+    </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
